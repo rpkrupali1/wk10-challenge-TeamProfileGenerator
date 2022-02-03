@@ -18,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/rpkrupali1/wk10-challenge-TeamProfileGenerator/issues"
   },
-  "homepage": "https://github.com/rpkrupali1/wk10-challenge-TeamProfileGenerator#readme"
+  "homepage": "https://github.com/rpkrupali1/wk10-challenge-TeamProfileGenerator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  },
+  "devDependencies": {
+    "jest": "^27.4.7"
+  }
 }
