@@ -1,0 +1,22 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "Generate teams profile based on input feedback",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rpkrupali1/wk10-challenge-TeamProfileGenerator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rpkrupali1/wk10-challenge-TeamProfileGenerator/issues"
+  },
+  "homepage": "https://github.com/rpkrupali1/wk10-challenge-TeamProfileGenerator#readme"
+}
