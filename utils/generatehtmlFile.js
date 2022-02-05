@@ -17,4 +17,19 @@ const generateFile = (filePath, fileContent) => {
     });    
 }
 
-module.exports = generateFile;
+const copyFile = (source,destination) => {
+    return new Promise((resolve,reject) => {
+        fs.copyFile(source,destination,err => {
+            if(err){
+                reject(err);
+                return;
+            }
+            resolve({
+                ok: true,
+                message: 'File copied!'
+            });
+        })
+    })
+}
+
+module.exports = {generateFile, copyFile};
