@@ -2,6 +2,8 @@ const inquirer = require('inquirer');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 const Manager = require('./lib/Manager');
+const generatePage = require('./src/generateHtmlTemplate');
+const generateFile = require('./utils/generatehtmlFile');
 var teamMembers = [];
 
 const getTeamMemberInfo = () => {        
@@ -57,13 +59,12 @@ const getTeamMemberInfo = () => {
         teamMembers.push(employee);
 
         if(teamMemberData.confirmAddTeamMember)
-            return this.getTeamMemberInfo();               
+            return getTeamMemberInfo();               
         else
             return teamMembers;
     });   
 };
 
-
-
-
-
+getTeamMemberInfo()
+.then(teamMembers => generatePage(teamMembers))
+.then(fileContents=> generateFile('./dist/index.html',fileContents));
